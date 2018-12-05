@@ -1,0 +1,16 @@
+<ng-container *ngIf= "productsList.length>0; else noProduct">
+    
+    <ul>
+      <li *ngFor = "let product of productsList ">
+        {{product.name}}
+        <button type="button" class="btn btn-success" (click)="remove(product)">Usun</button>
+        <button type="button" class="btn btn-danger" (click)="done(product)">Kupione</button>
+      </li>
+    </ul>
+  </ng-container>
+  <ng-template #noProduct>
+    <p>Koniec zakupow mozesz isc do domu!</p>
+  </ng-template>
+  <app-save></app-save>
+  <app-delete></app-delete>
+  <app-progressbar></app-progressbar>

@@ -1,0 +1,15 @@
+
+<p>Dodaj nowy produkt:</p>
+<div class="input-group"style="width:250px;">
+      <input class="form-control width100" [(ngModel)]="newProduct" (keyup.enter) = "add()" class="form-control" >
+
+    <span class="input-group-btn">
+    <button class="btn btn-info" type="submit" [disabled] = "!newProduct" (click)="add()" class="btn btn-primary mb-2" >Dodaj</button>
+    </span>
+</div>
+<app-save></app-save>
+<app-delete></app-delete>
+<app-progressbar></app-progressbar>
+    
+ 
+

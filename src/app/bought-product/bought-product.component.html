@@ -1,0 +1,9 @@
+<p>Kupione produkty:</p>
+<ul>
+  <li  *ngFor = "let product of productBought" >
+    {{product.name}}
+  </li>
+</ul>
+<app-save></app-save>
+<app-delete></app-delete>
+<app-progressbar></app-progressbar>
