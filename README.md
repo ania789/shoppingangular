@@ -1,5 +1,5 @@
 # Shopping app
-## This application is created for people which would like to make shopping easier. They can add, delete and save products which they want to buy.
+This application is created for people which would like to make shopping easier. They can add, delete and save products which they want to buy or they bought.
 
 # Shopping
 
